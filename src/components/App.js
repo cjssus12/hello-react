@@ -1,24 +1,25 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 
+import Value from './Value';
 class App extends Component {
 
     static defaultProps={
 
-    };
+ };
 
 render() {
     return (
         <div>
-            holly shit
-                
+            <Value></Value>
         </div>
         )
-    }
+}
 }
 
 App.propTypes = {
-        name:PropTypes.number.isRequired     
+                
+            
 };
+
 
 export default App;
