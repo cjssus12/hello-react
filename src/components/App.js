@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
+import Counter from './Counter';
 
-import Value from './Value';
 class App extends Component {
 
     static defaultProps={
@@ -10,16 +10,10 @@ class App extends Component {
 render() {
     return (
         <div>
-            <Value></Value>
+            <Counter/>
         </div>
-        )
+        );
+    }
 }
-}
-
-App.propTypes = {
-                
-            
-};
-
 
 export default App;

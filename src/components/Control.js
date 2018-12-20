@@ -14,16 +14,16 @@ class Control extends Component {
     };
  
 
-render() {
-    return (
-        <div>
-            <button onClick={this.props.onPlus}>+</button>
-            <button onClick={this.props.onSubtrack}>+</button>
-            <button onClick={this.props.onRandomizeColor}>+</button>
-        </div>
-        );
-    }
-};
+    render() {
+        return (
+            <div>
+                <button onClick={this.props.onPlus}>+</button>
+                <button onClick={this.props.onSubtrack}>+</button>
+                <button onClick={this.props.onRandomizeColor}>+</button>
+            </div>
+            );
+        }
+    };
 
 Control.PropTypes = {
     onPlus:PropTypes.func,
