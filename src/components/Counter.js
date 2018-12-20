@@ -5,9 +5,6 @@ import Control from './Control';
 
 class Counter extends Component {
 
-    static defaultProps={
-
- };
 
 render() {
     return (

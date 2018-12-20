@@ -18,8 +18,8 @@ class Control extends Component {
         return (
             <div>
                 <button onClick={this.props.onPlus}>+</button>
-                <button onClick={this.props.onSubtrack}>+</button>
-                <button onClick={this.props.onRandomizeColor}>+</button>
+                <button onClick={this.props.onSubtrack}>-</button>
+                <button onClick={this.props.onRandomizeColor}>"color change"</button>
             </div>
             );
         }
