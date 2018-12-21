@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 class Value extends Component {
 
@@ -17,8 +17,8 @@ render() {
 }
 
 Value.propTypes = {
-    number:PropTypes.number
-    };
+    number:propTypes.number
+};
 
 
 export default Value;

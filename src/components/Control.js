@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import propTypes from 'prop-types';
 
 function creatWarning(funcName) {
-    return ()=>console.log(funcName + 'is not difined')
-}
+    return ()=> console.warn(funcName + 'is not defined')
+};
 
 class Control extends Component {
 
@@ -11,7 +11,7 @@ class Control extends Component {
         onPlus:()=>creatWarning('onPlus'),
         onSubtrack:()=>creatWarning('onSubtrack'),
         onRandomizeColor:()=>creatWarning('onRandomizeColor'),
-    };
+    }
  
 
     render() {
@@ -19,16 +19,16 @@ class Control extends Component {
             <div>
                 <button onClick={this.props.onPlus}>+</button>
                 <button onClick={this.props.onSubtrack}>-</button>
-                <button onClick={this.props.onRandomizeColor}>"color change"</button>
+                <button onClick={this.props.onRandomizeColor}>color change</button>
             </div>
-            );
+            )
         }
-    };
+    }
 
-Control.PropTypes = {
-    onPlus:PropTypes.func,
-    onSubtrack:PropTypes.func,
-    onRandomizeColor:PropTypes.func
+Control.propTypes = {
+    onPlus:propTypes.func,
+    onSubtrack:propTypes.func,
+    onRandomizeColor:propTypes.func
 };
 
 export default Control;

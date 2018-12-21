@@ -1,19 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import Counter from './Counter';
 
-class App extends Component {
-
-    static defaultProps={
-
- };
+//class App extends Component {
+// 
+//    static defaultProps={
+//
+// };
+export default class App extends Component {
 
 render() {
     return (
         <div>
             <Counter/>
         </div>
-        );
+        )
     }
 }
 
-export default App;
+// export default App;
